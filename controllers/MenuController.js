@@ -67,6 +67,16 @@ module.exports = class MenuController {
     this.main();
   }
 
+  getDate(){
+    this.clear();
+    let todayDate = new Date();
+    let formattedDate = todayDate.toLocaleDateString();
+    let formattedTime = todayDate.toLocaleTimeString();
+    console.log('Today is ' + formattedDate);
+    console.log('It is ' + formattedTime);
+    this.main();
+  }
+
   exit(){
     console.log("Thanks for using AddressBloc!");
     process.exit();

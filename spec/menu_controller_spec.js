@@ -11,4 +11,11 @@ describe("MenuController", () => {
       expect(this.menu.remindMe()).toBe("Learning is a life-long pursuit");
     });
   });
+
+  describe("remindMe()", () => {
+
+    it("should return 'Learning is a life-long pursuit' when called", () => {
+      expect(this.menu.remindMe()).toBe("Learning is a life-long pursuit");
+    });
+  });
 });
